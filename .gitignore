@@ -4,6 +4,7 @@ metastore_db/
 output/
 datasets/big/
 keys/
+datasets/project/
 
 # Created by https://www.gitignore.io/api/java,linux,macos,gradle,windows,eclipse,intellij
 # Edit at https://www.gitignore.io/?templates=java,linux,macos,gradle,windows,eclipse,intellij
