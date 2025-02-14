@@ -39,4 +39,23 @@ object FlightDataParser {
       (tailnum, manufacturer, model, type_aircraft, engine_type, year)
     }
   }
+
+  def parse_carrier(line: String) = {
+    val parts = line.split(",").map(_.trim.replaceAll("^\"|\"$", ""))
+    val code = parts(0).toUpperCase
+    val description = parts(1)
+    (code, description)
+  }
+
+  def parse_airport(line: String) = {
+      val parts = line.split(",").map(_.trim.replaceAll("^\"|\"$", ""))
+      val iata = parts(0).toUpperCase
+      val airport = parts(1)
+      val city = parts(2)
+      val state = parts(3)
+      val country = parts(4)
+      val lat = parts(5)
+      val long = parts(6)
+      (iata, airport, city, state, country, lat, long)
+  }
 }

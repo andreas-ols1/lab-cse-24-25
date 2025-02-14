@@ -1,7 +1,6 @@
 src/main/resources/aws_credentials.txt
 .idea/
 metastore_db/
-output/
 datasets/big/
 keys/
 datasets/project/
